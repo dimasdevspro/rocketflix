@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  @media (max-width: 800px) {
+    body {
+        background: var(--background) no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shuffle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .shuffle img {
+      width: 3.4rem;
+      height: 1.9rem;
+    }
+
+    .shuffle h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--title);
+      text-align: center;
+  }
+
+  
+  .movie-section {
+    display: flex;
+    flex-direction: column;
+    width: 13.43rem;
+    margin: 1.875rem;
+}
+
+.movie-information h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--subtitle)
+}
+
+.movie-information p {
+  font-family: 'Poppins', sans-serif;
+  font-size: .75rem;
+  font-weight: normal;
+  color: var(--title);
+}
+
+.movie-section h3, .movie-information p {
+  text-align: center;
+}
+
+
+.search-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13.43rem;
+}
+
+
+.search-movie button {  
+  display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 11.31rem;
+    height: 2.93rem;
+    background: #e9e6e3 url(./assets/shuffle.svg) no-repeat;
+    background-position: 15% 50%;
+    background-size: 2.25rem 1.56rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .625rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+
+}
+
+
+.search-movie p {
+  margin-top: 1.625rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-align: center;
+  color: var(--title);
+}
+  }
+
+  @media (min-width: 800px){
+    body {
+        background: var(--background) no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .shuffle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .shuffle img {
+        width: 5.4rem;
+        height: 3.9rem;
+    }
+  
+    .shuffle h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--title);
+    }
+  
+    .movie-section {
+        display: flex;
+        width: 52.25rem;
+        justify-content: center;
+        height: 19.93rem;
+        margin: 1.875rem;
+    }
+  
+    .movie-information {
+        margin: 0 0 0 2.125rem;
+    }
+    .movie-information h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--subtitle)
+    }
+  
+    .movie-information p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      color: var(--title);
+    }
+  
+    .search-movie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 23.75rem;
+    }
+  
+    .search-movie button {  
+      display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 11.31rem;
+        height: 2.93rem;
+        background: #e9e6e3 url(./assets/shuffle.svg) no-repeat;
+        background-position: 15% 50%;
+        background-size: 2.25rem 1.56rem;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: .625rem;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+  
+    }
+  
+    .search-movie p {
+        margin-top: 1.625rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.875rem;
+        font-weight: normal;
+        text-align: center;
+        color: var(--title);
+    }
+  
+    
+  }
